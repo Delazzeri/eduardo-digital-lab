@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Award, Code2, BookOpen, GraduationCap } from "lucide-react";
+import { Award, Code2, BookOpen, GraduationCap, Eye } from "lucide-react";
 
 const certCategories = [
   {
@@ -10,6 +10,13 @@ const certCategories = [
       "Python - Básico ao Intermediário",
       "TypeScript - Essentials",
       "HTML5 & CSS3 Avançado",
+      <a
+        href="https://drive.google.com/drive/folders/1sNiNkOyaxDNAWpdzosx4bYYI_YC7A2ZW?usp=sharing"
+        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-meditransition-all duration-300 hover:border-primary/50 hover:bg-secondary"
+        >
+        <Eye className="w-4 h-4" />
+        Visualizar
+      </a>
     ],
   },
   {

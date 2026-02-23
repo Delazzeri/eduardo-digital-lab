@@ -54,7 +54,7 @@ const HeroSection = () => {
             Ver Projetos
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/Delazzeri"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-medium transition-all duration-300 hover:border-primary/50 hover:bg-secondary"
@@ -63,7 +63,7 @@ const HeroSection = () => {
             GitHub
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://br.linkedin.com/in/eduardodelazeri"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-medium transition-all duration-300 hover:border-primary/50 hover:bg-secondary"

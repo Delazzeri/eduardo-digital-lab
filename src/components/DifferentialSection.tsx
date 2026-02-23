@@ -4,23 +4,23 @@ import { Zap, Users, BarChart3, Layers } from "lucide-react";
 const differentials = [
   {
     icon: Zap,
-    title: "Visão de Produto",
-    description: "Entendo o ciclo completo de um produto digital, do conceito ao lançamento.",
+    title: "Engenharia de Produto",
+    description: "Compreendo o ciclo completo de desenvolvimento, da arquitetura à entrega, construindo soluções escaláveis, organizadas e orientadas à performance.",
   },
   {
     icon: Users,
-    title: "Experiência do Usuário",
-    description: "Anos de design me deram sensibilidade para criar interfaces que convertem.",
+    title: "Design de Interfaces",
+    description: "Experiência em design aplicada ao desenvolvimento front-end, criando interfaces intuitivas, funcionais e centradas no usuário.",
   },
   {
     icon: BarChart3,
-    title: "Pensamento Estratégico",
-    description: "Marketing ensinou a pensar em métricas, ROI e impacto nos negócios.",
+    title: "Arquitetura & Código",
+    description: "Foco em escrever código limpo, estruturado e sustentável, aplicando boas práticas, lógica sólida e pensamento computacional.",
   },
   {
     icon: Layers,
-    title: "Multidisciplinar",
-    description: "A combinação de design, marketing e código é rara — e poderosa.",
+    title: "Perfil Multidisciplinar",
+    description: "Integro design, desenvolvimento e tecnologia para criar produtos digitais eficientes, funcionais e bem estruturados.",
   },
 ];
 
@@ -42,8 +42,7 @@ const DifferentialSection = () => {
             <span className="gradient-text">é um diferencial?</span>
           </h2>
           <p className="section-subtitle mx-auto text-center">
-            A intersecção entre negócios e código cria profissionais que não apenas constroem
-            — mas constroem com propósito e estratégia.
+            A intersecção entre negócios e código cria profissionais que não apenas constroem, mas constroem com propósito e estratégia.
           </p>
         </motion.div>
 
