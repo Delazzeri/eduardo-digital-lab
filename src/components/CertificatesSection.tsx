@@ -12,6 +12,7 @@ const certCategories = [
       "HTML5 & CSS3 Avançado",
       <a
         href="https://drive.google.com/drive/folders/1sNiNkOyaxDNAWpdzosx4bYYI_YC7A2ZW?usp=sharing"
+        target="_blank"
         className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-meditransition-all duration-300 hover:border-primary/50 hover:bg-secondary"
         >
         <Eye className="w-4 h-4" />
@@ -82,13 +83,16 @@ const CertificatesSection = () => {
                 <h3 className="font-semibold font-display text-foreground">{cat.title}</h3>
               </div>
               <ul className="space-y-3">
-                {cat.certs.map((cert) => (
-                  <li key={cert} className="flex items-center gap-3 text-sm text-muted-foreground">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                    {cert}
-                  </li>
-                ))}
-              </ul>
+              {cat.certs.map((cert, index) => (
+                <li
+                  key={index}
+                  className="flex items-center gap-3 text-sm text-muted-foreground"
+                >
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                  {cert}
+                </li>
+              ))}
+            </ul>
             </motion.div>
           ))}
         </div>
