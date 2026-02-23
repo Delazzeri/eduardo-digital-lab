@@ -1,52 +1,47 @@
 import { motion } from "framer-motion";
-import { Award, Code2, BookOpen, GraduationCap, Eye } from "lucide-react";
+import { Megaphone, Code2, BookOpen, GraduationCap, Eye } from "lucide-react";
 
 const certCategories = [
   {
     title: "Linguagens de Programação",
     icon: Code2,
+    link: "https://drive.google.com/drive/folders/14l5893B1dHfRmphemoyVJj-CG3rm1bK7?usp=sharing",
     certs: [
-      "JavaScript - Fundamentos",
-      "Python - Básico ao Intermediário",
-      "TypeScript - Essentials",
-      "HTML5 & CSS3 Avançado",
-      <a
-        href="https://drive.google.com/drive/folders/1sNiNkOyaxDNAWpdzosx4bYYI_YC7A2ZW?usp=sharing"
-        target="_blank"
-        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-meditransition-all duration-300 hover:border-primary/50 hover:bg-secondary"
-        >
-        <Eye className="w-4 h-4" />
-        Visualizar
-      </a>
+      "Lógica de programação: mergulhe em programação com JavaScript",
+      "Lógica de programação: explore funções e listas",
+      "Imersão Dados com Python",
+      "Carreira Node.js: boas-vindas e primeiros passos",
+      "JavaScript em 7 Dias + Projetos Reais",
+      "Lógica de Programação Para Iniciantes e Estudantes",
     ],
   },
   {
-    title: "Cursos Técnicos",
+    title: "Livros",
     icon: BookOpen,
+    link: "https://drive.google.com/drive/folders/1_WzgKd41QN_tIP1BNl3v6is7cePR6rKa?usp=sharing",
     certs: [
-      "Desenvolvimento Web Full Stack",
-      "Banco de Dados SQL",
-      "Git & GitHub",
-      "Lógica de Programação",
+      "Cientista do Marketing Digital - Dener Lippert",
+      "Aprenda JavaScript com Dashboards - Casa do Código",
+      "Use a Cabeça! JavaScript - Michael Morrison",
     ],
   },
   {
-    title: "Bootcamps",
-    icon: GraduationCap,
+    title: "Marketing e Design",
+    icon: Megaphone,
+    link: "https://drive.google.com/drive/folders/1B9gePxsoPQJhQuwG-hv7sboDCmTMkOWG?usp=sharing",
     certs: [
-      "Bootcamp Desenvolvimento Web",
-      "Bootcamp React",
-      "Imersão Dev",
+      "Design Gráfico do Zero ao Avançado",
+      "Design Gráfico e Visual de Alto Nível",
     ],
   },
   {
     title: "Formação Complementar",
-    icon: Award,
+    icon: GraduationCap,
+    link: "https://drive.google.com/drive/folders/1P3vxUjy684SvV8pQVpFHqrREKiei7pO2?usp=sharing",
     certs: [
-      "UX/UI Design",
-      "Marketing Digital",
-      "Gestão de Projetos",
-      "Metodologias Ágeis",
+      "VSCode: aprendendo dicas e truques",
+      "Carreira Exponencial",
+      "Temas Transversais",
     ],
   },
 ];
@@ -63,7 +58,7 @@ const CertificatesSection = () => {
           className="mb-12"
         >
           <span className="badge-tech mb-4 inline-block">Certificações</span>
-          <h2 className="section-title mb-4">Formação &<br /><span className="gradient-text">Certificados</span></h2>
+          <h2 className="section-title mb-4">Certificados &<br /><span className="gradient-text">Leituras</span></h2>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 gap-6">
@@ -93,6 +88,15 @@ const CertificatesSection = () => {
                 </li>
               ))}
             </ul>
+            <a
+            href={cat.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-4 px-6 py-3 rounded-lg border border-border hover:border-primary/50 hover:bg-secondary transition-all duration-300"
+          >
+            <Eye className="w-4 h-4" />
+            Visualizar
+          </a>
             </motion.div>
           ))}
         </div>

@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { Zap, Users, BarChart3, Layers } from "lucide-react";
+import { Users, Layers, PackageSearch, CodeXml } from "lucide-react";
 
 const differentials = [
   {
-    icon: Zap,
+    icon: PackageSearch,
     title: "Engenharia de Produto",
     description: "Compreendo o ciclo completo de desenvolvimento, da arquitetura à entrega, construindo soluções escaláveis, organizadas e orientadas à performance.",
   },
@@ -13,7 +13,7 @@ const differentials = [
     description: "Experiência em design aplicada ao desenvolvimento front-end, criando interfaces intuitivas, funcionais e centradas no usuário.",
   },
   {
-    icon: BarChart3,
+    icon: CodeXml,
     title: "Arquitetura & Código",
     description: "Foco em escrever código limpo, estruturado e sustentável, aplicando boas práticas, lógica sólida e pensamento computacional.",
   },

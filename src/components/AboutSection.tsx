@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
-import { Code2, Palette, TrendingUp, Lightbulb, Brain, Flag } from "lucide-react";
+import { Code2, Palette, TrendingUp, Lightbulb, Brain, Flag, Puzzle } from "lucide-react";
 
 const highlights = [
-  { icon: Palette, label: "Design desde 2019" },
-  { icon: TrendingUp, label: "Gerente de Marketing" },
   { icon: Code2, label: "Ciência da Computação" },
   { icon: Brain, label: "Conhecimento em IA" },
-  { icon: Flag, label: "Liderança de equipe" },
+  { icon: TrendingUp, label: "Gerente de Marketing" },
+  { icon: Palette, label: "Ferramentas de Design" },
+  { icon: Flag, label: "Liderança de Equipe" },
+  { icon: Puzzle, label: "Resolução de Problemas" },
 ];
 
 const AboutSection = () => {

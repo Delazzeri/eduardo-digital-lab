@@ -10,7 +10,7 @@ const projects = [
     deploy: "#",
   },
   {
-    title: "Task Manager API",
+    title: "Plataforma de cursos",
     description: "API RESTful para gerenciamento de tarefas com autenticação JWT.",
     techs: ["Node.js", "Express", "MongoDB"],
     github: "https://github.com",

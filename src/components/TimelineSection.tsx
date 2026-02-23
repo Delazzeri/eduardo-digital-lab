@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 
 const events = [
-  { year: "2019", title: "Início na área de Design", description: "Primeiros trabalhos como designer gráfico freelancer." },
-  { year: "2020", title: "Marketing Digital", description: "Transição para marketing digital com foco em estratégia e branding." },
-  { year: "2021", title: "Gerência de Marketing", description: "Promoção a gerente de marketing, liderando equipe e projetos estratégicos." },
-  { year: "2022", title: "Consolidação", description: "Ampliação de portfólio com projetos de identidade visual e campanhas nacionais." },
-  { year: "2023", title: "Ciência da Computação", description: "Início da graduação em Ciência da Computação e primeiros projetos em programação." },
-  { year: "2024", title: "Desenvolvimento Web", description: "Projetos em React, TypeScript e APIs. Certificações técnicas concluídas." },
-  { year: "2025", title: "Transição Estratégica", description: "Foco em oportunidades de desenvolvimento, produto e tecnologia." },
+  { year: "2019", title: "Início na área de Design", description: "Início dos estudos em ferramentas de design, utilizando softwares da Adobe, como Photoshop, Illustrator, InDesign, After Effects e Premiere Pro, em trabalhos escolares e na criação de materiais." },
+  { year: "2020", title: "Aprimoramento em Design", description: "Expansão de ideias criativas, aprimoramento no uso das ferramentas do Pacote Adobe e realização de cursos de capacitação." },
+  { year: "2021", title: "Cursos e desenvolvimento profissional", description: "Ano dedicado ao aprimoramento técnico e criativo por meio da realização de cursos, com foco no desenvolvimento de habilidades em design, marketing e ferramentas digitais, consolidando uma base sólida para atuação profissional." },
+  { year: "2022", title: "Preparação para ingresso na UFRGS", description: "Período dedicado ao pré-vestibular com foco na preparação para ingresso na Universidade Federal do Rio Grande do Sul (UFRGS), desenvolvendo disciplina, organização e aprofundamento em conteúdos fundamentais." },
+  { year: "2023", title: "Continuidade na preparação para a UFRGS", description: "Continuidade na preparação para o vestibular da Universidade Federal do Rio Grande do Sul (UFRGS), com foco em constância, evolução acadêmica e fortalecimento da base teórica para a graduação." },
+  { year: "2024", title: "Ciência da Computação", description: "Iniciei minha graduação em Ciência da Computação, buscando sempre alinhar design e programação, visto que ambos caminham juntos para proporcionar a melhor experiência do usuário (UX)." },
+  { year: "2025", title: "Vispe Capital", description: "“Ao assumir o setor de marketing da empresa, fui responsável por estruturá-lo completamente, desenvolvendo materiais padrão, padronizando as redes sociais, organizando o fluxo de postagens, além de atuar na criação, ilustração e diagramação de um livro, bem como na idealização e edição de um podcast." },
+  { year: "2026", title: "Líder em marketing", description: "“Ao assumir a posição de liderança, trabalhei em colaboração com os demais profissionais sob minha gestão e, juntos, impulsionamos o setor com foco em tráfego pago por meio do Meta Ads e do Google Ads. Após a estruturação do setor, pude direcionar meu foco para a área na qual estudo. Atualmente, estou aplicando e aprimorando meus conhecimentos em TI e Inteligência Artificial." },
 ];
 
 const TimelineSection = () => {

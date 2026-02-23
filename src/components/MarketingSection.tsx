@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Eye, Palette } from "lucide-react";
 
-const categories = ["Todos", "Social Media", "Branding", "Revistas", "Mockups", "Identidade Visual"];
+const categories = ["Todos", "Social Media", "Materiais Gráficos", "Livros", "Tráfego Pago", "Identidade Visual"];
 
 const marketingProjects = [
   { title: "Campanha Digital Verão", category: "Social Media", description: "Série de posts para redes sociais com foco em engajamento e conversão." },
   { title: "Identidade Visual Startup", category: "Branding", description: "Criação completa de marca para startup de tecnologia." },
-  { title: "Revista Corporativa", category: "Revistas", description: "Design editorial para revista trimestral de empresa do setor financeiro." },
-  { title: "Mockup App Mobile", category: "Mockups", description: "Apresentação visual de aplicativo mobile para pitch de investidores." },
-  { title: "Rebranding Empresa", category: "Branding", description: "Processo completo de rebranding incluindo manual de marca." },
+  { title: "Revista Corporativa", category: "Livros", description: "Design editorial para revista trimestral de empresa do setor financeiro." },
+  { title: "Mockup App Mobile", category: "Tráfego Pago", description: "Apresentação visual de aplicativo mobile para pitch de investidores." },
+  { title: "Rebranding Empresa", category: "Materiais Gráficos", description: "Processo completo de rebranding incluindo manual de marca." },
   { title: "Kit de Materiais Gráficos", category: "Identidade Visual", description: "Papelaria, cartão de visita, envelope e materiais impressos." },
   { title: "Feed Instagram Planejado", category: "Social Media", description: "Planejamento visual de feed com 30 posts e stories." },
   { title: "Logo + Identidade Visual", category: "Identidade Visual", description: "Desenvolvimento de logotipo e guia de aplicação da marca." },
