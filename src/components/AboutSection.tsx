@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
-import { Code2, Palette, TrendingUp, Lightbulb, Brain, Flag, Puzzle } from "lucide-react";
+import { Code2, Palette, TrendingUp, Lightbulb, Brain, Flag, Puzzle, Languages, Wrench } from "lucide-react";
 
 const highlights = [
   { icon: Code2, label: "Ciência da Computação" },
   { icon: Brain, label: "Conhecimento em IA" },
   { icon: TrendingUp, label: "Gerente de Marketing" },
   { icon: Palette, label: "Ferramentas de Design" },
+  { icon: Wrench, label: "Ferramentas Adobe" },
+  { icon: Languages, label: "Inglês Intermediário" },
   { icon: Flag, label: "Liderança de Equipe" },
   { icon: Puzzle, label: "Resolução de Problemas" },
 ];

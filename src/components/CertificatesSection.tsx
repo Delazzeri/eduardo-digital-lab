@@ -22,7 +22,7 @@ const certCategories = [
     certs: [
       "Cientista do Marketing Digital - Dener Lippert",
       "Aprenda JavaScript com Dashboards - Casa do Código",
-      "Use a Cabeça! JavaScript - Michael Morrison",
+      "JavaScript: O Guia Definitivo - David Flanagan ",
     ],
   },
   {
