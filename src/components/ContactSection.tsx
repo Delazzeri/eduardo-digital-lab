@@ -48,6 +48,7 @@ const ContactSection = () => {
             <a
               href="https://drive.google.com/file/d/1UWKSBVrIMgSktM7u_HyGOWB-HvjQCni6/view?usp=sharing"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-medium transition-all duration-300 hover:border-primary/50 hover:bg-secondary"
+              target="_blank"
             >
               <Eye className="w-4 h-4" />
               Currículo
