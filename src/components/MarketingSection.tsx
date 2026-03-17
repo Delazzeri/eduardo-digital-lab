@@ -40,7 +40,7 @@ const marketingProjects = [
   { 
     title: "Hotel Madrid", 
     category: "Diversos", 
-    description: "Prototipação de um site hoteleiro realizado na cadeira de Desenvolvimento Web da graduação.", 
+    description: "Wireframe de um site hoteleiro realizado na cadeira de Desenvolvimento Web da graduação.", 
     link: "https://drive.google.com/drive/folders/1PCo9ITXgetbXi2GRZaP0EyvQXozur12j?usp=sharing",
     image: "/madrid.jpeg"
   },
@@ -110,6 +110,14 @@ const marketingProjects = [
   },
   
   { 
+    title: "Feed Instagram Cursos", 
+    category: "Social Media", 
+    description: "Série de posts para redes sociais com foco informativo e institucional.", 
+    link: "https://www.instagram.com/vispeskills/",
+    image: "/skills.jpeg"
+  },
+
+  { 
     title: "Ebook: Jogo de Gente Grande", 
     category: "Livros", 
     description: "Material voltado para empreendedores que buscam acelerar o crescimento ou planejar uma sucessão com liquidez. \nIdentação | Ilustração | Capa | Revisão | 29 páginas", 
@@ -142,6 +150,14 @@ const marketingProjects = [
   },
 
   { 
+    title: "Feed Instagram Podcast", 
+    category: "Social Media", 
+    description: "Série de posts de novos episódios, recortes e falas importantes relacionadas ao episódio do podcast.", 
+    link: "https://www.instagram.com/equity.talks/",
+    image: "/equitytalks.jpeg"
+  },
+
+  { 
     title: "Mousepad", 
     category: "Materiais Gráficos", 
     description: "Design funcional e personalizado, combinando estética com uso no dia a dia.", 
@@ -163,6 +179,14 @@ const marketingProjects = [
     description: "Arte personalizada para caneca que transforma um objeto comum em uma peça compatível com a identidade minimalista da empresa.", 
     link: "https://drive.google.com/drive/folders/1JH7CcBa68M66_geb5BYhRbRWEhUoc3hG?usp=sharing",
     image: "/caneca.jpeg"
+  },
+
+  { 
+    title: "App Synergy", 
+    category: "Diversos", 
+    description: "Protótipo de um app de busca de empresas no meio B2B realizado na cadeira de Projeto e Desenvolvimento de Sistemas Móveis da graduação.", 
+    link: "https://www.figma.com/design/IvDgrpXoZGXBfjRoSQuBy0/Synergy---App-de-rela%C3%A7%C3%B5es-corporativas?node-id=0-1&p=f",
+    image: "/synergy.jpeg"
   },
 
   { 
