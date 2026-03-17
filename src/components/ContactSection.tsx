@@ -14,7 +14,7 @@ const ContactSection = () => {
           className="text-center"
         >
           <span className="badge-tech mb-4 inline-block">Contato</span>
-          <h2 className="section-title mb-4">Vamos<br /><span className="gradient-text">Conversar?</span></h2>
+          <h2 className="section-title mb-4">Vamos<span className="gradient-text">Conversar?</span></h2>
           <p className="section-subtitle mx-auto text-center mb-10">
             Estou aberto a oportunidades de freelancer, posições júnior e projetos colaborativos.
           </p>

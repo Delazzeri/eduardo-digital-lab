@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
@@ -11,14 +10,11 @@ const projects = [
     title: "Adobe Crative Cloud",
     description: "Ferramentas líderes de mercado para design, fotografia, vídeo e web.",
     techs: ["Illustrator", "Photoshop", "Premiere", "InDesign", "Acrobat", "After Effects", "Lightroom", "Podcast"],
-    ExternalLink: "https://www.adobe.com/br/creativecloud",
-    deploy: "#",
   },
   {
     title: "Microsoft Office",
     description: "Ferramentas para tarefas corporativas, como edição de textos, planilhas e apresentações.",
     techs: ["Excel", "Word", "PowerPoint", "Copilot"],
-    ExternalLink: "https://www.microsoft.com/pt-br/microsoft-365",
   },
   {
     title: "Google Workspace",
@@ -48,9 +44,9 @@ const FerramentasSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <span className="badge-tech mb-4 inline-block">Programação</span>
-          <h2 className="section-title mb-4">Projetos de<br /><span className="gradient-text">Desenvolvimento</span></h2>
-          <p className="section-subtitle">Projetos que demonstram minhas habilidades técnicas em desenvolvimento web.</p>
+          <span className="badge-tech mb-4 inline-block">Ferramentas</span>
+          <h2 className="section-title mb-4">Ferramentas que<span className="gradient-text">Utilizo</span></h2>
+          <p className="section-subtitle">Tecnologias, bibliotecas e ferramentas que utilizo para desenvolver, testar e otimizar aplicações.</p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 gap-6">
@@ -67,26 +63,6 @@ const FerramentasSection = () => {
                 <h3 className="text-lg font-semibold font-display text-foreground group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                <div className="flex gap-2">
-                  <a
-                    href={project.ExternalLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
-                  >
-                    <Github className="w-4 h-4" />
-                  </a>
-                  {project.deploy && (
-                    <a
-                      href={project.deploy}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  )}
-                </div>
               </div>
               <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
               <div className="flex flex-wrap gap-2">

@@ -4,29 +4,35 @@ import { Github, ExternalLink } from "lucide-react";
 const projects = [
   {
     title: "Portfolio Website",
-    description: "Site de portfólio pessoal construído com React, TypeScript e Tailwind CSS.",
-    techs: ["React", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com",
-    deploy: "#",
+    description: "Site de portfólio pessoal desenvolvido com auxílio de inteligência artificial, com versionamento e edição utilizando Git no VS Code.",
+    techs: ["Lovable", "TypeScript", "Git"],
+    github: "https://github.com/Delazzeri/eduardo-digital-lab",
+    deploy: "https://eduardo-digital-lab.vercel.app/",  
   },
   {
-    title: "Plataforma de cursos",
-    description: "API RESTful para gerenciamento de tarefas com autenticação JWT.",
-    techs: ["Node.js", "Express", "MongoDB"],
-    github: "https://github.com",
+    title: "Landing Page de Conversão",
+    description: "Página de conversão para mentoria gratuita com foco em geração de lead.",
+    techs: ["Lovable", "Typescript", "Git"],
+    github: "https://github.com/Delazzeri/lp-revolucao-equity",
+    deploy: "https://lp-revolucao-equity.vercel.app/",
   },
   {
-    title: "E-commerce Dashboard",
-    description: "Dashboard analítico para e-commerce com gráficos interativos e filtros.",
-    techs: ["React", "Recharts", "Supabase"],
-    github: "https://github.com",
-    deploy: "#",
+    title: "Site Institucional Vispe Capital",
+    description: "Desenvolvimento do site institucional da Vispe Capital em WordPress, com apresentação de soluções empresariais, cases de sucesso, clientes e equipe, priorizando estratégias de otimização para mecanismos de busca (SEO).",
+    techs: ["HTML", "WordPress", "Plugins", "Webhook"],
+    deploy: "https://vispe.com.br/",
   },
   {
-    title: "Weather App",
-    description: "Aplicação de previsão do tempo com geolocalização e dados em tempo real.",
-    techs: ["JavaScript", "API REST", "CSS3"],
-    github: "https://github.com",
+    title: "Site Institucional UniDiFranco",
+    description: "Site institucional da UniDiFranco desenvolvido em WordPress, voltado à divulgação de cursos técnicos, supletivo EJA e outras modalidades de ensino, otimizado para SEO.",
+    techs: ["WordPress", "Plugins", "Webhook"],
+    deploy: "https://unidifranco.com.br/",
+  },
+  {
+    title: "Plataforma de curso Vispe Skills (em desenvolvimento)",
+    description: "Plataforma de cursos online desenvolvida de forma autoral, voltada à venda e gestão de cursos digitais, com foco em usabilidade, desempenho e conversão.",
+    techs: ["Lovable"],
+    deploy: "https://lovable.dev/projects/b23278f4-51a4-45fb-9d62-e3c38f1f173e",
   },
 ];
 
@@ -42,7 +48,7 @@ const ProjectsSection = () => {
           className="mb-12"
         >
           <span className="badge-tech mb-4 inline-block">Programação</span>
-          <h2 className="section-title mb-4">Projetos de<br /><span className="gradient-text">Desenvolvimento</span></h2>
+          <h2 className="section-title mb-4">Projetos de<span className="gradient-text">Desenvolvimento</span></h2>
           <p className="section-subtitle">Projetos que demonstram minhas habilidades técnicas em desenvolvimento web.</p>
         </motion.div>
 

@@ -24,7 +24,7 @@ const AboutSection = () => {
           className="mb-12"
         >
           <span className="badge-tech mb-4 inline-block">Sobre Mim</span>
-          <h2 className="section-title mb-4">Trajetória &<br /><span className="gradient-text">Evolução</span></h2>
+          <h2 className="section-title mb-4">Trajetória &<span className="gradient-text">Evolução</span></h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -36,7 +36,7 @@ const AboutSection = () => {
             className="space-y-5 text-muted-foreground leading-relaxed"
           >        
             <p>
-              Minha jornada profissional começou em <strong className="text-foreground">2019</strong> na área de design e marketing digital. atualmente graduando em Ciência da Computação.
+              Minha jornada profissional começou em <strong className="text-foreground">2019</strong> na área de design e marketing digital. Atualmente estou cursando Ciência da Computação.
               Ao longo da minha trajetória, desenvolvi visão estratégica de marca, posicionamento e crescimento de negócios. Hoje, aplico essa base na construção de soluções tecnológicas orientadas a produto, experiência e performance.
             </p>
             <p>

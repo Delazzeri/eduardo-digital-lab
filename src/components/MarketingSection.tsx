@@ -1,18 +1,30 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Eye, Palette } from "lucide-react";
+import { url } from "inspector";
 
-const categories = ["Todos", "Social Media", "Materiais Gráficos", "Livros", "Tráfego Pago", "Identidade Visual"];
+const categories = ["Todos", "Social Media", "Materiais Gráficos", "Livros", "Identidade Visual", "Diversos"];
 
 const marketingProjects = [
-  { title: "Campanha Digital Verão", category: "Social Media", description: "Série de posts para redes sociais com foco em engajamento e conversão." },
-  { title: "Identidade Visual Startup", category: "Branding", description: "Criação completa de marca para startup de tecnologia." },
-  { title: "Revista Corporativa", category: "Livros", description: "Design editorial para revista trimestral de empresa do setor financeiro." },
-  { title: "Mockup App Mobile", category: "Tráfego Pago", description: "Apresentação visual de aplicativo mobile para pitch de investidores." },
-  { title: "Rebranding Empresa", category: "Materiais Gráficos", description: "Processo completo de rebranding incluindo manual de marca." },
-  { title: "Kit de Materiais Gráficos", category: "Identidade Visual", description: "Papelaria, cartão de visita, envelope e materiais impressos." },
-  { title: "Feed Instagram Planejado", category: "Social Media", description: "Planejamento visual de feed com 30 posts e stories." },
-  { title: "Logo + Identidade Visual", category: "Identidade Visual", description: "Desenvolvimento de logotipo e guia de aplicação da marca." },
+  { title: "Ebook: A Chave Mestra para Captação de Recursos", category: "Livros", description: "Ebook voltado para estratégias avançadas para captação corporativa, social e governamental. \n Identação | Ilustração | Capa | Revisão | 201 páginas" },
+
+  { title: "Feed Instagram Informativo", category: "Social Media", description: "Criação de série de posts para redes sociais com foco na apresentação e fortalecimento da marca.", url: "https://www.instagram.com/unidifranco/"},
+
+  { title: "Identidade Visual Phill's Burguer", category: "Branding", description: "Desenvolvimento completo da identidade visual e posicionamento de marca para hamburgueria." },
+  
+  { title: "Ebook: Como Aumentar o Valor da Sua Empresa", category: "Livros", description: "O conteúdo ensina o empresário a medir o Enterprise Value e a equilibrar três pilares fundamentais: crescimento, margem de lucro e redução de riscos. \n Identação | Ilustração | Capa | Revisão | 21 páginas" },
+  
+  { title: "Identidade Visual Vispe Capital", category: "Branding", description: "Desenvolvimento completo da identidade visual e posicionamento de marca para empresa de consultoria financeira e geração de Equity." },
+  
+  { title: "Ebook: Jogo de Gente Grande", category: "Livros", description: "Material voltado para empreendedores que buscam acelerar o crescimento ou planejar uma sucessão com liquidez. \n Identação | Ilustração | Capa | Revisão | 29 páginas" },
+  
+  { title: "Kit de Materiais Gráficos", category: "Materiais Gráficos", description: "Criação de materiais gráficos diversos, como banners, cadernos personalizados, adesivação de elevador, mousepads, placas de sinalização, quadros decorativos e kits de boas-vindas."},
+  
+  { title: "Livro: Códigos do Equity", category: "Livros", description: "Livro físico de como construir empresas que crescem e geram riqueza. \n Identação | Ilustração | Capa | Revisão | 236 páginas" },
+  
+  { title: "Feed Instagram Planejado", category: "Social Media", description: "Série de posts para redes sociais com foco em engajamento, conversão, informação e posicionamento de marca."},
+  
+  { title: "Ebook: O Cemitério de Empresas", category: "Livros", description: "Este guia trabalha com a prevenção de crises e gestão de riscos. Ele analisa as lições por trás de grandes colapsos corporativos, detalhando os cinco estágios do declínio e erros fatais comuns. \n Identação | Ilustração | Capa | Revisão | 25 páginas"},
 ];
 
 const MarketingSection = () => {
@@ -33,7 +45,7 @@ const MarketingSection = () => {
           className="mb-12"
         >
           <span className="badge-tech mb-4 inline-block">Marketing & Design</span>
-          <h2 className="section-title mb-4">Projetos<br /><span className="gradient-text">Criativos</span></h2>
+          <h2 className="section-title mb-4">Projetos<span className="gradient-text">Criativos</span></h2>
           <p className="section-subtitle">Trabalhos de marketing digital, branding e design gráfico.</p>
         </motion.div>
 

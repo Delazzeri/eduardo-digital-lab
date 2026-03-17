@@ -23,7 +23,7 @@ const TimelineSection = () => {
           className="mb-12"
         >
           <span className="badge-tech mb-4 inline-block">Evolução</span>
-          <h2 className="section-title mb-4">Linha do<br /><span className="gradient-text">Tempo</span></h2>
+          <h2 className="section-title mb-4">Linha do<span className="gradient-text">Tempo</span></h2>
         </motion.div>
 
         <div className="relative">

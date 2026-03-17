@@ -26,9 +26,9 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
         >
-          Estratégia, Código
+          Estratégia, Design
           <br />
-          <span className="gradient-text">e Design.</span>
+          <span className="gradient-text">e Código</span>
         </motion.h1>
 
         <motion.p
@@ -37,7 +37,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          Estudante de Ciência da Computação e gerente de marketing, unindo tecnologia,
+          Estudante de Ciência da Computação e Gerente de Marketing, unindo tecnologia,
           estratégia e criatividade para construir soluções digitais com impacto real.
         </motion.p>
 
