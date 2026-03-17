@@ -37,7 +37,7 @@ const DifferentialSection = () => {
         >
           <span className="badge-tech mb-4 inline-block">Diferencial</span>
           <h2 className="section-title mb-4 mx-auto">
-            Por que Marketing + Tecnologia
+            Por que Design + Tecnologia
             <br />
             <span className="gradient-text">é um diferencial?</span>
           </h2>

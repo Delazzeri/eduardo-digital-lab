@@ -17,7 +17,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="badge-tech mb-6 inline-block">Marketing · Código · Design</span>
+          <span className="badge-tech mb-6 inline-block">Marketing · Design · Código</span>
         </motion.div>
 
         <motion.h1

@@ -48,7 +48,7 @@ const ProjectsSection = () => {
           className="mb-12"
         >
           <span className="badge-tech mb-4 inline-block">Programação</span>
-          <h2 className="section-title mb-4">Projetos de<span className="gradient-text">Desenvolvimento</span></h2>
+          <h2 className="section-title mb-4">Projetos de <span className="gradient-text">Desenvolvimento</span></h2>
           <p className="section-subtitle">Projetos que demonstram minhas habilidades técnicas em desenvolvimento web.</p>
         </motion.div>
 

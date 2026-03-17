@@ -24,7 +24,7 @@ const AboutSection = () => {
           className="mb-12"
         >
           <span className="badge-tech mb-4 inline-block">Sobre Mim</span>
-          <h2 className="section-title mb-4">Trajetória &<span className="gradient-text">Evolução</span></h2>
+          <h2 className="section-title mb-4">Trajetória & <span className="gradient-text">Evolução</span></h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
