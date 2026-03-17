@@ -67,14 +67,16 @@ const ProjectsSection = () => {
                   {project.title}
                 </h3>
                 <div className="flex gap-2">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
-                  >
-                    <Github className="w-4 h-4" />
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
+                    >
+                      <Github className="w-4 h-4" />
+                    </a>
+                  )}
                   {project.deploy && (
                     <a
                       href={project.deploy}

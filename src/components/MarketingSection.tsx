@@ -2,175 +2,175 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Eye, Palette } from "lucide-react";
 
-const categories = ["Todos", "Social Media", "Materiais Gráficos", "Livros", "Identidade Visual", "Diversos"];
+const categories = ["Todos", "Social Media", "Materiais Gráficos", "Identidade Visual", "Livros",  "Diversos"];
 
 const marketingProjects = [
   { 
     title: "Ebook: A Chave Mestra para Captação de Recursos", 
     category: "Livros", 
-    description: "Ebook voltado para estratégias avançadas para captação corporativa, social e governamental. \n Identação | Ilustração | Capa | Revisão | 201 páginas", 
+    description: "Ebook voltado para estratégias avançadas para captação corporativa, social e governamental. \nIdentação | Ilustração | Capa | Revisão | 201 páginas", 
     link: "https://drive.google.com/drive/folders/1Niw95DcgxcUjgJVAGck16n2lSgeiLacV?usp=sharing",
-    image: "/public/captacao.jpeg" 
+    image: "/captacao.jpeg" 
   },
-    /*/imagens/ebook-chave-mestra.jpg */
+  
   { 
     title: "Feed Instagram Informativo", 
     category: "Social Media", 
     description: "Criação de série de posts para redes sociais com foco na apresentação e fortalecimento da marca.", 
     link: "https://www.instagram.com/unidifranco/",
-    image: "#"
+    image: "/unidifranco.jpeg"
   },
-
+  
   { 
     title: "Identidade Visual Phill's Burguer", 
     category: "Identidade Visual", 
     description: "Desenvolvimento completo da identidade visual e posicionamento de marca para hamburgueria.", 
     link: "https://drive.google.com/drive/folders/11H27UyrG5wc7WoAQUekTQXJqiSKfhX41?usp=sharing",
-    image: "#" 
+    image: "/idphills.jpeg" 
+  },
+  
+  { 
+    title: "Banner", 
+    category: "Materiais Gráficos", 
+    description: "Peça impactante no hall de entrada da empresa para destacar a marca, a história e eventos ocorridos na trajetória.", 
+    link: "https://drive.google.com/drive/folders/1YpVIwiqJKqHyUrUQJyoGR_pCtQj0yJAm?usp=sharing",
+    image: "/banner.jpeg"
+  },
+  
+  { 
+    title: "Hotel Madrid", 
+    category: "Diversos", 
+    description: "Prototipação de um site hoteleiro realizado na cadeira de Desenvolvimento Web da graduação.", 
+    link: "https://drive.google.com/drive/folders/1PCo9ITXgetbXi2GRZaP0EyvQXozur12j?usp=sharing",
+    image: "/madrid.jpeg"
+  },
+  
+  { 
+    title: "Adesivagem de Elevador", 
+    category: "Materiais Gráficos", 
+    description: "Arte pensada para ambientes corporativos, comunicando de forma clara e impactante a linha racional da empresa.", 
+    link: "https://drive.google.com/drive/folders/1kq-eVpVxCtAl4cNtrGG1XS6H5c464tWG?usp=sharing",
+    image: "/elevador.jpeg"
   },
 
   { 
     title: "Ebook: Como Aumentar o Valor da Sua Empresa", 
     category: "Livros", 
-    description: "O conteúdo ensina o empresário a medir o Enterprise Value e a equilibrar três pilares fundamentais: crescimento, margem de lucro e redução de riscos. \n Identação | Ilustração | Capa | Revisão | 21 páginas", 
+    description: "O conteúdo ensina o empresário a medir o Enterprise Value e a equilibrar três pilares fundamentais: crescimento, margem de lucro e redução de riscos. \nIdentação | Ilustração | Capa | Revisão | 21 páginas", 
     link: "https://drive.google.com/drive/folders/1jrDX5-1OPIwHoiCoFRggJgX4xN3ciVDd?usp=sharing",
-    image: "#" 
+    image: "/aumentar.jpeg" 
   },
 
-  { 
-    title: "Identidade Visual Vispe Capital", 
-    category: "Identidade Visual", 
-    description: "Desenvolvimento completo da identidade visual e posicionamento de marca para empresa de consultoria financeira e geração de Equity.", 
-    link: "https://drive.google.com/file/d/1UyE9hJCcj2jP3yBCI_TfrxMB7GGz18Pj/view?usp=sharing",
-    image: "#"
-  },
-
-  { 
-    title: "Ebook: Jogo de Gente Grande", 
-    category: "Livros", 
-    description: "Material voltado para empreendedores que buscam acelerar o crescimento ou planejar uma sucessão com liquidez. \n Identação | Ilustração | Capa | Revisão | 29 páginas", 
-    link: "https://drive.google.com/drive/folders/1dPkAk2IdxutJZMWP_2MDGCmKc0elET2c?usp=sharing",
-    image: "#" 
-  },
-   
   { 
     title: "XV Bianca Borba", 
     category: "Materiais Gráficos", 
-    description: "#", 
+    description: "Projeto visual completo para evento de 15 anos, com identidade elegante e personalizada para a ocasião.", 
     link: "https://drive.google.com/drive/folders/1_QU1lMFWBesP1QmtpBqD4lTrFrFBKT_t?usp=sharing",
-    image: "#" 
+    image: "/bianca.jpeg" 
   },
-
-  { 
-    title: "Livro: Códigos do Equity", 
-    category: "Livros", 
-    description: "Livro físico de como construir empresas que crescem e geram riqueza. \n Identação | Ilustração | Capa | Revisão | 236 páginas", 
-    link: "https://drive.google.com/drive/folders/1HpZO9MdegIAxG0t5iSmKwR1Rq5b01hbA?usp=sharing",
-    image: "#"
-  },
-
+  
   { 
     title: "Feed Instagram Planejado", 
     category: "Social Media", 
     description: "Série de posts para redes sociais com foco em engajamento, conversão, informação e posicionamento de marca.", 
     link: "https://www.instagram.com/vispecapital/",
-    image: "#"
+    image: "/vispe.jpeg"
   },
-
-  { 
-    title: "Ebook: O Cemitério de Empresas", 
-    category: "Livros", 
-    description: "Este guia trabalha com a prevenção de crises e gestão de riscos. Ele analisa as lições por trás de grandes colapsos corporativos, detalhando os cinco estágios do declínio e erros fatais comuns. \n Identação | Ilustração | Capa | Revisão | 25 páginas", 
-    link: "https://drive.google.com/drive/folders/130iMGlRWZzACXS5W5518-epRa-pJmuf7?usp=sharing",
-    image: "#" 
-  },
-
+  
   { 
     title: "Tatuagem Mitológica", 
     category: "Diversos", 
-    description: "#", 
+    description: "Artes baseadas em mitologia, combinando simbolismo e estética marcante.", 
     link: "https://drive.google.com/drive/folders/1mQwvYTqshpuJVKxH6xvobDgt2jQLtWo6?usp=sharing",
-    image: "#"
+    image: "/mitologia.jpeg"
   },
-
+  
   { 
-    title: "Tatuagem Cultura Oriental", 
-    category: "Diversos", 
-    description: "#", 
-    link: "https://drive.google.com/drive/folders/1s__B9nOev21l9I1XJfUy3qkVr0HPz1A2?usp=sharing",
-    image: "#"
+    title: "Ebook: O Cemitério de Empresas", 
+    category: "Livros", 
+    description: "Este guia trabalha com a prevenção de crises e gestão de riscos. Ele analisa as lições por trás de grandes colapsos corporativos, detalhando os cinco estágios do declínio e erros fatais comuns. \nIdentação | Ilustração | Capa | Revisão | 25 páginas", 
+    link: "https://drive.google.com/drive/folders/130iMGlRWZzACXS5W5518-epRa-pJmuf7?usp=sharing",
+    image: "/cemiterio.jpeg" 
   },
-
+  
+  { 
+    title: "Identidade Visual Vispe Capital", 
+    category: "Identidade Visual", 
+    description: "Desenvolvimento completo da identidade visual e posicionamento de marca para empresa de consultoria financeira e geração de Equity.", 
+    link: "https://drive.google.com/file/d/1UyE9hJCcj2jP3yBCI_TfrxMB7GGz18Pj/view?usp=sharing",
+    image: "/idvispe.jpeg"
+  },
+  
   { 
     title: "Quadros", 
     category: "Materiais Gráficos", 
-    description: "#", 
+    description: "Designs artísticos e decorativos, reforçando a cultura da empresa em ambientes modernos e personalizados.", 
     link: "https://drive.google.com/drive/folders/1gsOFmckyAcmGta92PRoQIsa3gXgr2KAW?usp=sharing",
-    image: "#"
+    image: "/quadros.jpeg"
   },
-
+  
+  { 
+    title: "Ebook: Jogo de Gente Grande", 
+    category: "Livros", 
+    description: "Material voltado para empreendedores que buscam acelerar o crescimento ou planejar uma sucessão com liquidez. \nIdentação | Ilustração | Capa | Revisão | 29 páginas", 
+    link: "https://drive.google.com/drive/folders/1dPkAk2IdxutJZMWP_2MDGCmKc0elET2c?usp=sharing",
+    image: "/gente.jpeg" 
+  },
+  
+  { 
+    title: "Tatuagem Cultura Oriental", 
+    category: "Diversos", 
+    description: "Criações visuais inspiradas em elementos culturais, com riqueza de detalhes e significado.", 
+    link: "https://drive.google.com/drive/folders/1s__B9nOev21l9I1XJfUy3qkVr0HPz1A2?usp=sharing",
+    image: "/oriental.jpeg"
+  },
+  
   { 
     title: "Placas de Banheiro", 
     category: "Materiais Gráficos", 
-    description: "#", 
+    description: "Artes para sinalização e comunicação visual, com clareza e impacto visual.", 
     link: "https://drive.google.com/drive/folders/1rxgcch8DbKqojhe1byJ9nS3eiPEBOJDe?usp=sharing",
-    image: "#"
+    image: "/placas.jpeg"
+  },
+  
+  { 
+    title: "Livro: Códigos do Equity", 
+    category: "Livros", 
+    description: "Livro físico de como construir empresas que crescem e geram riqueza. \nIdentação | Ilustração | Capa | Revisão | 236 páginas", 
+    link: "https://drive.google.com/drive/folders/1HpZO9MdegIAxG0t5iSmKwR1Rq5b01hbA?usp=sharing",
+    image: "/equity.jpeg"
   },
 
   { 
     title: "Mousepad", 
     category: "Materiais Gráficos", 
-    description: "#", 
+    description: "Design funcional e personalizado, combinando estética com uso no dia a dia.", 
     link: "https://drive.google.com/drive/folders/1-h430eZhmr6JZc7PWBdnA7-nPOBx-zwy?usp=sharing",
-    image: "#"
-  },
-
-  { 
-    title: "Hotel Madrid", 
-    category: "Diversos", 
-    description: "#", 
-    link: "https://drive.google.com/drive/folders/1PCo9ITXgetbXi2GRZaP0EyvQXozur12j?usp=sharing",
-    image: "#"
-  },
-
-  { 
-    title: "Adesivação de Elevador", 
-    category: "Materiais Gráficos", 
-    description: "#", 
-    link: "https://drive.google.com/drive/folders/1kq-eVpVxCtAl4cNtrGG1XS6H5c464tWG?usp=sharing",
-    image: "#"
+    image: "/mousepad.jpeg"
   },
 
   { 
     title: "Carta de Bem-vindos", 
     category: "Materiais Gráficos", 
-    description: "#", 
+    description: "Design elegante para cartas e comunicações formais, transmitindo profissionalismo e a marca da empresa.", 
     link: "https://drive.google.com/drive/folders/1MIojHuvA513TJNAvrRujE7Ix0BUw0M8g?usp=sharing",
-    image: "#"
+    image: "/welcome.jpeg"
   },
 
   { 
     title: "Caneca", 
     category: "Materiais Gráficos", 
-    description: "#", 
+    description: "Arte personalizada para caneca que transforma um objeto comum em uma peça compatível com a identidade minimalista da empresa.", 
     link: "https://drive.google.com/drive/folders/1JH7CcBa68M66_geb5BYhRbRWEhUoc3hG?usp=sharing",
-    image: "#"
+    image: "/caneca.jpeg"
   },
 
   { 
-    title: "Cadernos", 
+    title: "Caderno", 
     category: "Materiais Gráficos", 
-    description: "#", 
+    description: "Design exclusivo e minimalista para o caderno, unindo estética e identidade visual para um produto único.", 
     link: "https://drive.google.com/drive/folders/1QJwigZu_rDK6s2Nou6WJHODWuat8wcIs?usp=sharing",
-    image: "#"
-  },
-
-  { 
-    title: "Banner", 
-    category: "Materiais Gráficos", 
-    description: "#", 
-    link: "https://drive.google.com/drive/folders/1YpVIwiqJKqHyUrUQJyoGR_pCtQj0yJAm?usp=sharing",
-    image: "#"
+    image: "/caderno.jpeg"
   },
 ];
 
@@ -243,7 +243,7 @@ const MarketingSection = () => {
               <div className="p-5 flex flex-col flex-grow">
                 <span className="text-[11px] font-medium text-primary mb-2 block">{project.category}</span>
                 <h3 className="text-sm font-semibold text-foreground mb-1">{project.title}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed mb-4">{project.description}</p>
+                <p className="text-xs text-muted-foreground leading-relaxed mb-4 whitespace-pre-line">{project.description}</p>
                 
                 <div className="mt-auto pt-2">
                    <a
