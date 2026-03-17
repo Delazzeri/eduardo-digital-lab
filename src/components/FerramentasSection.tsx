@@ -45,8 +45,8 @@ const FerramentasSection = () => {
           className="mb-12"
         >
           <span className="badge-tech mb-4 inline-block">Ferramentas</span>
-          <h2 className="section-title mb-4">Ferramentas que<span className="gradient-text">Utilizo</span></h2>
-          <p className="section-subtitle">Tecnologias, bibliotecas e ferramentas que utilizo para desenvolver, testar e otimizar aplicações.</p>
+          <h2 className="section-title mb-4">Ferramentas que <span className="gradient-text">Utilizo</span></h2>
+          <p className="section-subtitle">Tecnologias, bibliotecas e ferramentas que utilizo para desenvolver, criar, otimizar aplicações e personalizar.</p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 gap-6">

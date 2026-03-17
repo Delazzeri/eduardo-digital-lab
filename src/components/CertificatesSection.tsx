@@ -58,7 +58,7 @@ const CertificatesSection = () => {
           className="mb-12"
         >
           <span className="badge-tech mb-4 inline-block">Certificações</span>
-          <h2 className="section-title mb-4">Certificados &<span className="gradient-text">Leituras</span></h2>
+          <h2 className="section-title mb-4">Leituras & <span className="gradient-text">Certificados</span></h2>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 gap-6">
