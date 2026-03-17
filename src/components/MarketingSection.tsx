@@ -132,7 +132,15 @@ const marketingProjects = [
     link: "https://drive.google.com/drive/folders/1s__B9nOev21l9I1XJfUy3qkVr0HPz1A2?usp=sharing",
     image: "/oriental.jpeg"
   },
-  
+
+  { 
+    title: "Podcast", 
+    category: "Diversos", 
+    description: "podcast para empreendedores e gestores que buscam alavancar seus negócios e maximizar seu Equity. \nEdição | Thumbnails | Gerenciamento | Análise de público", 
+    link: "https://open.spotify.com/show/09f6Lx4ckx7sltGudSAu92?si=901f92c23a0c4274",
+    image: "/spotify.jpeg"
+  },
+
   { 
     title: "Placas de Banheiro", 
     category: "Materiais Gráficos", 
