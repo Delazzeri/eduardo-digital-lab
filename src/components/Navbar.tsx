@@ -33,7 +33,7 @@ const Navbar = () => {
     >
       <div className="section-container flex items-center justify-between h-16">
         <a href="#" className="font-display font-bold text-lg text-foreground">
-          <span className="gradient-text">ED²</span>dev design
+          <span className="gradient-text">Eduardo </span>Digital Lab
         </a>
 
         <div className="hidden md:flex items-center gap-6">
