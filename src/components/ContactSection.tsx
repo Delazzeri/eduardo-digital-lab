@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Download } from "lucide-react";
+import { Mail, Linkedin, Eye } from "lucide-react";
 import { IconBrandWhatsapp } from "@tabler/icons-react";
 
 const ContactSection = () => {
@@ -49,7 +49,7 @@ const ContactSection = () => {
               href="https://drive.google.com/file/d/1UWKSBVrIMgSktM7u_HyGOWB-HvjQCni6/view?usp=sharing"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-medium transition-all duration-300 hover:border-primary/50 hover:bg-secondary"
             >
-              <Download className="w-4 h-4" />
+              <Eye className="w-4 h-4" />
               Currículo
             </a>
           </div>
