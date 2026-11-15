@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Megaphone, Code2, BookOpen, GraduationCap, Eye } from "lucide-react";
+import { Megaphone, Code2, BookOpen, GraduationCap } from "lucide-react";
 
 const certCategories = [
   {
@@ -88,15 +88,6 @@ const CertificatesSection = () => {
                 </li>
               ))}
             </ul>
-            <a
-            href={cat.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-4 px-6 py-3 rounded-lg border border-border hover:border-primary/50 hover:bg-secondary transition-all duration-300"
-          >
-            <Eye className="w-4 h-4" />
-            Visualizar
-          </a>
             </motion.div>
           ))}
         </div>

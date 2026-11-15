@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, ChevronDown } from "lucide-react";
+import { Linkedin, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
@@ -52,15 +52,6 @@ const HeroSection = () => {
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5"
           >
             Ver Projetos
-          </a>
-          <a
-            href="https://github.com/Delazzeri"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border text-foreground font-medium transition-all duration-300 hover:border-primary/50 hover:bg-secondary"
-          >
-            <Github className="w-4 h-4" />
-            GitHub
           </a>
           <a
             href="https://br.linkedin.com/in/eduardodelazeri"

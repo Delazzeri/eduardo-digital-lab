@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
@@ -66,28 +65,6 @@ const ProjectsSection = () => {
                 <h3 className="text-lg font-semibold font-display text-foreground group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                <div className="flex gap-2">
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
-                    >
-                      <Github className="w-4 h-4" />
-                    </a>
-                  )}
-                  {project.deploy && (
-                    <a
-                      href={project.deploy}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  )}
-                </div>
               </div>
               <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
               <div className="flex flex-wrap gap-2">

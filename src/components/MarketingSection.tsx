@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Eye, Palette } from "lucide-react";
+import { Palette } from "lucide-react";
 
 const categories = ["Todos", "Social Media", "Materiais Gráficos", "Identidade Visual", "Livros",  "Diversos"];
 
@@ -276,18 +276,6 @@ const MarketingSection = () => {
                 <span className="text-[11px] font-medium text-primary mb-2 block">{project.category}</span>
                 <h3 className="text-sm font-semibold text-foreground mb-1">{project.title}</h3>
                 <p className="text-xs text-muted-foreground leading-relaxed mb-4 whitespace-pre-line">{project.description}</p>
-                
-                <div className="mt-auto pt-2">
-                   <a
-                    href={project.link || "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border hover:border-primary/50 hover:bg-secondary transition-all duration-300 text-xs"
-                  >
-                    <Eye className="w-3 h-3" />
-                    Visualizar
-                  </a>
-                </div>
               </div>
             </motion.div>
           ))}
